@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Pull code from your GitHub repo
-                git 'https://github.com/harsh5052311/python-app.git'
+                git branch: 'main', url: 'https://github.com/harsh5052311/python-app.git'
             }
         }
         stage('Build Docker Image') {
